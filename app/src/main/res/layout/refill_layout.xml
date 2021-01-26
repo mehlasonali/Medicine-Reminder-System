@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:fab="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="16dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@id/toolbar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:id="@+id/add_reminder_layout_top"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_height="148dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/reminder_title"
+        android:layout_marginLeft="72dp"
+        android:hint="Medicine Name"
+        android:textSize="25dp"
+        android:lines="4"
+        android:minLines="4"
+        android:gravity="top|left"
+        android:textColor="@android:color/white"
+        android:scrollHorizontally="false"
+        android:textColorHint="@color/primary_text_disabled_material_dark"
+        android:inputType="textCapWords|textMultiLine"
+        android:layout_marginRight="16dp"
+        android:layout_height="140dp"/>
+
+</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/repeat_icon"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginRight="335dp"
+        android:layout_marginBottom="360dp"
+        android:src="@drawable/ic_repeat_black_24dp" />
+
+    <TextView
+        android:id="@+id/repeat_text"
+        android:layout_width="245dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="339dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="339dp"
+        android:text="Refill Reminder"
+        android:textColor="@color/Black"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
